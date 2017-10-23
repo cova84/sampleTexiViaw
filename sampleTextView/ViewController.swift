@@ -24,13 +24,12 @@ class ViewController: UIViewController {
         myTextView.center = self.view.center // オブジェクトの中央揃え。Self.viewは画面の白背景全部を意味する。
         myTextView.textColor = UIColor.blue
         myTextView.textAlignment = .center // text内　横軸中央揃え
+        print(myTextView.text)
     }
 
     //キーボードを閉じるボタンが押された時発動
     @IBAction func tapClose(_ sender: UIButton) {
-    
-        //プログラム指定でキーボードを閉じる
-        myTextView.resignFirstResponder()
+        myTextView.resignFirstResponder() //プログラム指定でキーボードを閉じる
     }
     
     override func didReceiveMemoryWarning() {
